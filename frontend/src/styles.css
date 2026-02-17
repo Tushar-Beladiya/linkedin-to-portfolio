@@ -1,0 +1,15 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #111; background: #f4f6fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app { display: grid; gap: 1rem; padding: 1rem; grid-template-columns: 320px 1fr; }
+.card { background: white; border-radius: 14px; padding: 1rem; box-shadow: 0 8px 30px rgba(16,30,54,.08); }
+.controls form { display: grid; gap: .8rem; }
+input,select,button { width: 100%; padding: .6rem; border-radius: 10px; border: 1px solid #cfd6e4; }
+button { cursor: pointer; background: #111827; color: white; }
+.portfolio { background: white; border-radius: 14px; padding: 2rem; }
+.hero h1 { margin-bottom: .3rem; }
+.chip { text-transform: capitalize; color: #334155; font-size: .9rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: .8rem; }
+.theme-bold { background: linear-gradient(135deg,#fff, #eef2ff); }
+.theme-editorial { font-family: Georgia, serif; }
+@media (max-width: 900px) { .app { grid-template-columns: 1fr; } }
